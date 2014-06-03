@@ -433,11 +433,11 @@ p.dummy-text:nth-child(3) {
 }
 
 .slideshow li {
-	width: 90%;
+	width: 100%;
 	height: auto;
 	position: absolute;
 	top: 0;
-	left: 5%;
+	left: 0;
 	visibility: hidden;
 }
 .slideshow li iframe{
@@ -542,6 +542,7 @@ span.nav-close:before {
 
 /* Info on arrow key navigation */
 .info-keys {
+	display:none;
 	position: fixed;
 	top: 10px;
 	left: 10px;
