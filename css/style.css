@@ -1252,3 +1252,52 @@ ICONS
 .extern1, .extern2, .extern3, .extern4{
 	display:none;
 }
+#office{
+	width:100%;
+}
+#pin li{
+	display:inline-block;
+	width:20%;
+	height:300px;
+	border-radius: 5px;
+	background: #F7F7FA;
+	border:1px solid #34495e;
+	margin: 1%;
+	overflow:hidden;
+	position:relative;
+}
+#pin{
+	padding:0;
+}
+#pin img{
+	width:100%;
+	z-index:-1;
+}
+#pin li .desc{
+	background:#34495e;
+	width:100%;
+	height:50%;
+	color:#eee;
+	font-size:2vw;
+	margin:0;
+	position:absolute;
+	top:85%;
+	-webkit-transition:all 0.5s;
+}
+#pin li:hover .desc{
+	top:50%;
+	background:#04213F;
+	-webkit-transition:all 0.5s;
+}
+#pin p{
+	margin:0;
+}
+.ver-video{
+	display:inline;
+	border:solid 2px #fff;
+	padding:1% 5%;
+}
+.ver-video:hover{
+	padding:3% 7%;
+	cursor:pointer;
+}
