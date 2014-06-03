@@ -16,7 +16,7 @@ html, body{
 	/*background:#E0E0E0;*/
 	color:#FFAD00;
 }
-.tri, .tri1, .tri2, .tri3{
+.tri, .tri1, .tri2, .tri3, .tri4{
 	background:url(../img/tri.png) repeat-x 0 0;
 	background-position-x:1px;
 	position:relative;
@@ -36,6 +36,10 @@ html, body{
 	background:url(../img/tri3.png) repeat-x 0 0 !important;
 	clear:both;
 	bottom:20px;
+}
+.tri4{
+	background:url(../img/tri4.png) repeat-x 0 0 !important;
+	clear:both;
 }
 h1{
 	margin:0;
@@ -84,6 +88,9 @@ section{
 }
 #s5{
 	background:#F7F7FA;
+}
+#s6{
+	background:#ECF0F1
 }
 .clearfix {
 	margin-top:15%;
