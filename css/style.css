@@ -11,6 +11,7 @@ html, body{
 #content{
 	overflow: hidden;
 	background:#F7F7FA;
+	min-height:100%;
 }
 #header{
 	/*background:#E0E0E0;*/
@@ -60,7 +61,7 @@ section{
 .mod-inf{
 	float:left;
 	font-size:24px;
-	width:30%;
+	width:50%;
 	text-align:left;
 	color:#6B1E00;
 }
@@ -148,8 +149,13 @@ button {
   margin: 0;
   font-size:5vw !important;
   color:#fff;
-  padding:1em;
+  padding:1em 0;
   background:#FF5200;
+  width:20%;
+  height:20%;
+}
+button p{
+	font-size:1.2vw;
 }
 button:hover {
 	background:#CC4500;
@@ -1182,12 +1188,19 @@ ICONS
 	70%{ left: 30%;  opacity: 0; }
 	100%{ left: -50%; opacity: 0; }
 }
+
+.fecha:active{
+	-webkit-transform:translateY(-50px);
+	-webkit-transition:all 0.5s;
+}
+.fecha:visited{
+	-webkit-transform:translateY(50px);
+	-webkit-transition:all 0.5s;
+}
 .fecha:hover{
-	-webkit-transform:translateY(-20px);
-	-webkit-transition:all 1s;
 	cursor:pointer;
 }
-.fecha, .bloque-prof{
+.bloque-prof{
 	-webkit-transform:translateY(0px);
 	-webkit-transition:all 0.5s;
 }

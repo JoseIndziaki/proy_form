@@ -212,6 +212,7 @@
 .side{
 	height:100%;
 	width:50%;
+	box-shadow:0 12px 20px -10px rgba(81,64,49,0.6);
 }
 .side-left{
 	float:left;
@@ -228,4 +229,19 @@
 }
 .side p{
 	color:#295069;
+}
+.first{
+	background:#F7F7FA !important;
+	height: 100%;
+	width: 50%;
+	float: left;
+	box-shadow: none;
+}
+@media screen and (min-width: 26em) and (max-width: 50em) {
+
+	#bb-bookblock{
+		width:200%;
+		left:-100%;
+	}
+
 }
