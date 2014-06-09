@@ -20,7 +20,6 @@ html, body{
 .tri, .tri1, .tri2, .tri3, .tri4{
 	background:url(../img/tri.png) repeat-x 0 0;
 	background-position-x:1px;
-	position:relative;
 	height:10px;
 }
 .tri1{
@@ -83,7 +82,6 @@ section{
 #s4{
 	background:#004B82;
 	color:#D6E0EB !important;
-	top: -10px;
 	position: relative;
 	padding-bottom:20px;
 }
@@ -91,7 +89,10 @@ section{
 	background:#F7F7FA;
 }
 #s6{
-	background:#ECF0F1
+	background:#ECF0F1 url('../img/prof.png');
+	height:70vw;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 .clearfix {
 	margin-top:15%;
@@ -146,7 +147,7 @@ button {
   border: none;
   color: inherit;
   -webkit-font-smoothing: antialiased;
-  margin: 0;
+  margin: 2% !important;
   font-size:5vw !important;
   color:#fff;
   padding:1em 0;
@@ -1252,13 +1253,6 @@ ICONS
 	height:100px;
 	margin:20px;
 }
-.comp:hover{
-	-webkit-transform:scale(1.2);
-	z-index:10;
-}
-.comp{
-	-webkit-transform:scale(1);
-}
 #mapa-alumno, #book{
 	width:100%;
 }
@@ -1320,4 +1314,10 @@ ICONS
 .ver-video:hover{
 	padding:3% 7%;
 	cursor:pointer;
+}
+.comp:hover{
+	fill:#005A8D;
+}
+.comp{
+	fill:#ED1C24;
 }

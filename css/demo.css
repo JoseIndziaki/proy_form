@@ -151,6 +151,9 @@ a:hover, a:focus {
 	.da-img img{
 		width:200px;
 	}
+	#s6{
+		height:auto;
+	}
 
 }
 @media screen and (min-width: 30em) and (max-width: 50em) {
@@ -180,6 +183,9 @@ a:hover, a:focus {
 	.da-slide p{
 		font-size:1.5vw;
 		width:55%;
+	}
+	#s6{
+		height:auto;
 	}
 
 
