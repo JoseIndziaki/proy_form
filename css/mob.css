@@ -1,0 +1,144 @@
+@charset "utf-8";
+/* Medios fluidos sencillos
+   Nota: Los medios fluidos exigen la eliminación de los atributos de altura y anchura de los medios del código HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 no admite max-width (anchura máxima), por lo que usa de manera predeterminada una anchura del 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Propiedades de cuadrícula fluida de Dreamweaver
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	10;
+	dw-gutter-percentage:	25;
+	
+	Inspiración obtenida de "Responsive Web Design" de Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	y Golden Grid System de Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Diseño móvil: 480 px e inferior. */
+.head-cont{
+	background:url(http://images.shiksha.com/mediadata/images/1263448973phpKxIjuP.jpeg);
+	height:500px;
+	width:100%;
+	text-align:center;
+	font-family:telegrafico !important;
+	font-size:50px;
+	background-size: 100%;
+}
+li{
+	list-style:none;
+	padding:1em 0;
+	font-size:2vw;
+}
+#contenido{
+	overflow:hidden;
+	clear:both;
+}
+#left{
+	float:left;
+	width:15%;
+	height:100%;
+}
+.medl{
+	margin-left: -100px;
+	display: block;
+	float:left;
+	width: 90px;
+	height: 90px;
+	border:solid #FF7000 10px;
+	background-color: #fff;
+	border-radius:100%;
+	text-align:center;
+}
+.medl p{
+	font-size:5vw;
+	margin:0;
+	color:#800040;
+}
+#butt-a, #butt-b{
+	width:80%;
+	margin:0 auto;
+	border-radius:10px;
+	padding:5% 0;
+	text-align:center;
+}
+#butt-a a, #butt-b a{
+	padding:0.5em 3em;
+	border-radius:5px;
+	background:#FFB800;
+	font-family:telegrafico;
+	font-size:3vw;
+	color:#FFF;
+	text-decoration:none;
+	box-shadow: 5px 5px 0px #FF5C00;
+}
+#column1{
+	float:right;
+	width:80%;
+	border-left:solid 10px #FF7000;
+}
+h3{
+	color:#003;
+}
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 87.36%;
+	padding-left: 1.82%;
+	padding-right: 1.82%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+/* Diseño tableta: de 481 px a 768 px. Hereda estilos de: Diseño móvil. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+}
+
+/* Diseño escritorio: de 769 px hasta un máximo de 1232 px.  Hereda estilos de: Diseño móvil y Diseño tableta. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 100%;
+	max-width: 100%;
+	padding: 0;
+	margin: 0;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+}
+
