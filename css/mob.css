@@ -28,7 +28,7 @@ img, object, embed, video {
 
 /* Diseño móvil: 480 px e inferior. */
 .head-cont{
-	background:url(http://images.shiksha.com/mediadata/images/1263448973phpKxIjuP.jpeg);
+	background: url(../img/prof-bac.png);
 	height:500px;
 	width:100%;
 	text-align:center;
