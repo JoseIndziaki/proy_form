@@ -29,6 +29,7 @@ img, object, embed, video {
 /* Diseño móvil: 480 px e inferior. */
 .head-cont{
 	background: url(../img/prof-bac.png);
+	background-repeat:no-repeat;
 	height:500px;
 	width:100%;
 	text-align:center;
@@ -36,10 +37,28 @@ img, object, embed, video {
 	font-size:50px;
 	background-size: 100%;
 }
+footer{
+	background:#F2F2F2;
+	height:10%;
+}
 li{
 	list-style:none;
 	padding:1em 0;
 	font-size:2vw;
+}
+footer{
+	text-align:center;
+}
+footer li{
+	display:inline-block;
+	padding: 1em;
+	font-size: 15px;
+}
+footer li a, footer li a:visited{
+	color:#F93D06;
+}
+footer li a:hover{
+	color:#F60;
 }
 #contenido{
 	overflow:hidden;
@@ -51,11 +70,8 @@ li{
 	height:100%;
 }
 .medl{
-	margin-left: -100px;
 	display: block;
 	float:left;
-	width: 90px;
-	height: 90px;
 	border:solid #FF7000 10px;
 	background-color: #fff;
 	border-radius:100%;
@@ -67,21 +83,26 @@ li{
 	color:#800040;
 }
 #butt-a, #butt-b{
-	width:80%;
-	margin:0 auto;
-	border-radius:10px;
-	padding:5% 0;
+	padding:1% 0;
+	top:50%;
+	position:fixed;
 	text-align:center;
+	background: #FFB800;
+	-webkit-transform: translateX(-85%);
+	-webkit-transition:all 0.5s;
+	z-index:2;
+}
+#butt-a:hover{
+	-webkit-transform: translateX(0);
+	-webkit-transition:all 0.5s;
 }
 #butt-a a, #butt-b a{
-	padding:0.5em 3em;
+	padding:0.5em;
 	border-radius:5px;
-	background:#FFB800;
 	font-family:telegrafico;
-	font-size:3vw;
+	font-size:5vw;
 	color:#FFF;
 	text-decoration:none;
-	box-shadow: 5px 5px 0px #FF5C00;
 }
 #column1{
 	float:right;
@@ -107,7 +128,32 @@ h3{
 	display: block;
 }
 
+
 /* Diseño tableta: de 481 px a 768 px. Hereda estilos de: Diseño móvil. */
+@media only screen and (min-width: 1px) {
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+.head-cont{
+	height:150px;
+	width:100%;
+	font-size:10px;
+}
+.medl{
+	width:30px;
+	height:30px;
+	margin-left:-70px;
+}
+}
 
 @media only screen and (min-width: 481px) {
 .gridContainer {
@@ -121,6 +167,16 @@ h3{
 	margin-left: 0;
 	width: 100%;
 	display: block;
+}
+.head-cont{
+	height:250px;
+	width:100%;
+	font-size:20px;
+}
+.medl{
+	width:30px;
+	height:30px;
+	margin-left:-70px;
 }
 }
 
@@ -140,5 +196,23 @@ h3{
 	width: 100%;
 	display: block;
 }
+.head-cont{
+	height:500px;
+	width:100%;
+	font-size:50px;
+}
+.medl{
+	width:90px;
+	height:90px;
+	margin-left: -100px;
+}
 }
 
+.listo{
+	text-align:center;
+	font-size:3vw;
+	color:#FF7000;
+}
+.listo h1{
+	margin:0;
+}
