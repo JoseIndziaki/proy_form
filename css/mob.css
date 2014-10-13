@@ -27,25 +27,43 @@ img, object, embed, video {
 */
 
 /* Diseño móvil: 480 px e inferior. */
-.head-cont{
-	background: url(../img/prof-bac.png);
+.head-cont, .head-cont-tut{
 	background-repeat:no-repeat;
 	height:500px;
 	width:100%;
 	text-align:center;
-	font-family:telegrafico !important;
+	font-family:itc, helvetica !important;
+	color:#FFF;
+	background:rgba(0, 5, 58, 0.64);
 	font-size:50px;
+	overflow:hidden;
+}
+h1{
+	font-weight: 100;
+	text-align:center;
+	font-size:40px;
+}
+.head-cont:before{
+	content:"";
+	background: url(../img/fondo.jpg);
 	background-size: 100%;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	position:absolute;
+	height:500px;
+	z-index:-1	
+}
+.head-cont-tut{
+	background: url(../img/elearning-2.svg);
+	background-size:100%;
 }
 footer{
-	background:#F2F2F2;
+	background:#003A59;
 	height:10%;
 }
-li{
-	list-style:none;
-	padding:1em 0;
-	font-size:2vw;
-}
+
 footer{
 	text-align:center;
 }
@@ -55,7 +73,8 @@ footer li{
 	font-size: 15px;
 }
 footer li a, footer li a:visited{
-	color:#F93D06;
+	color: #FFFFFF;
+	text-decoration: NONE;;
 }
 footer li a:hover{
 	color:#F60;
@@ -72,13 +91,13 @@ footer li a:hover{
 .medl{
 	display: block;
 	float:left;
-	border:solid #FF7000 10px;
+	border:solid #003D5F 1px;
 	background-color: #fff;
 	border-radius:100%;
 	text-align:center;
 }
 .medl p{
-	font-size:5vw;
+	font-size:70px;
 	margin:0;
 	color:#800040;
 }
@@ -89,25 +108,29 @@ footer li a:hover{
 	text-align:center;
 	background: #FFB800;
 	-webkit-transform: translateX(-85%);
+	transform:translateX(-85%);
 	-webkit-transition:all 0.5s;
+	transition:all 0.5s;
 	z-index:2;
 }
 #butt-a:hover{
 	-webkit-transform: translateX(0);
+	transform:translateX(0);
 	-webkit-transition:all 0.5s;
+	transition:all 0.5s;
 }
 #butt-a a, #butt-b a{
 	padding:0.5em;
 	border-radius:5px;
-	font-family:telegrafico;
+	font-family:itcmd, helvetica;
 	font-size:5vw;
 	color:#FFF;
 	text-decoration:none;
 }
 #column1{
-	float:right;
-	width:80%;
-	border-left:solid 10px #FF7000;
+	width:50%;
+	margin:0 auto;
+	border-left:solid 1px #003D5F;
 }
 h3{
 	color:#003;
@@ -155,11 +178,16 @@ h3{
 }
 }
 
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 100px) and (max-width: 768px) {
 .gridContainer {
 	width: 90.675%;
 	padding-left: 1.1625%;
 	padding-right: 1.1625%;
+}
+.medl p {
+font-size: 25px;
+margin: 0;
+color: #800040;
 }
 #LayoutDiv1 {
 	clear: both;
@@ -169,14 +197,45 @@ h3{
 	display: block;
 }
 .head-cont{
-	height:250px;
+	height:100px;
 	width:100%;
 	font-size:20px;
+}
+.head-cont:before{
+	height:100px;
+	width:100%;
 }
 .medl{
 	width:30px;
 	height:30px;
-	margin-left:-70px;
+	margin-left:-58px;
+}
+li{
+	list-style:none;
+	padding:1em 0;
+	font-size:10px;
+}
+#tutoriales .vid{
+	display:inline-block;
+	width:80%;
+}
+.grid-wrap{
+	background:none;
+}
+#back{
+	background-size: auto;
+}
+#logo{
+	max-height:200px;
+}
+.grid{
+	color:#FFF;
+}
+.grid div{
+	float:none !important;
+	width: 100%;
+	text-align: center;
+	margin:100px 0;
 }
 }
 
@@ -197,14 +256,49 @@ h3{
 	display: block;
 }
 .head-cont{
-	height:500px;
+	height:200px;
 	width:100%;
 	font-size:50px;
+}
+.head-cont:before{
+	height:200px;
+	width:100%;
 }
 .medl{
 	width:90px;
 	height:90px;
-	margin-left: -100px;
+	margin-left: -90px;
+}
+.medl p {
+	font-size: 70px;
+	margin: 0;
+	color: #f49b00;
+}
+li{
+	list-style:none;
+	padding:1em 0;
+	font-size:1.1vw;
+}
+#tutoriales{
+	width:90%;
+	margin:0 auto;
+}
+#tutoriales .vid{
+	display:inline-block;
+	width:30%;
+}
+
+.grid-wrap{
+}
+#logo{
+	max-height:400px;
+}
+#back{
+	background-size: 100%;
+}
+.grid img{
+	float: none;
+	margin: 0 auto;
 }
 }
 
@@ -215,4 +309,30 @@ h3{
 }
 .listo h1{
 	margin:0;
+}
+@font-face{
+	font-family:itc;
+	src:url(../fonts/itc/ITCAvantGardeStd-XLt%204.otf);	
+}
+
+@font-face{
+	font-family:itcmd;
+	src: url(../fonts/itc/ITCAvantGardeStd-Md%202.otf);	
+}
+@font-face{
+	font-family:itcbk;
+	src: url(../fonts/itc/ITCAvantGardeStd-Bk%202.otf);	
+}
+#tutoriales{
+	border:solid 1px #003D5F;
+	border-radius:3px;
+	text-align:center;
+}
+
+#tutoriales .vid{
+	margin:0 auto;
+}
+#tutoriales .vid div, #tutoriales .vid div iframe{
+	width:100%;
+	background:#999;	
 }

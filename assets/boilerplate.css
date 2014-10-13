@@ -45,7 +45,7 @@ body {
 	background:#FFF;
 }
 
-body, button, input, select, textarea { font-family: sans-serif; color: #222; }
+body, button, input, select, textarea { font-family: itcbk, helvetica; color: #222; }
 
 /* 
  * Eliminar text-shadow (la sombra del texto) del resaltado de selección: h5bp.com/i
@@ -110,7 +110,6 @@ sub { bottom: -0.25em; }
    Listas
    ========================================================================== */
 
-ul, ol { margin: 0; padding: 0 0 0 40px; }
 dd { margin: 0 0 0 40px; }
 nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
 

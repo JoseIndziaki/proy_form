@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<link type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/redmond/jquery-ui.css" rel="stylesheet" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="http://lab.abhinayrathore.com/jquery_youtube/jquery.youtubepopup.min.js"></script>
+<script>
+$(function () {
+	$("a.youtube").YouTubePopup({ autoplay: 1, draggable: false, hideTitleBar: true,  }).click();
+});
+
+function clic() {
+ 
+ 	if($(window).width() > 710){
+
+		$(".clic").click(function () {
+		
+			var t = $(this).next();
+			t.show('slide',{direction:'left'},1500);
+			t.addClass('lon');
+		});
+	}
+ 	else{
+
+		$(".clic").click(function () {
+		
+			var t = $(this).next();
+			t.show('slide',{direction:'up'},1500);
+			$('.pir').addClass('orc');
+		});
+	}
+};
+</script>
+<title>Pirámide</title>
+
+<style>
+.contenido{
+	display:none;
+	color:#FFF;
+}
+section{
+	text-align:center;
+	display:inline-block;
+}
+.pir ul img{
+	height:50px;
+}
+#piramide>div{
+	text-align:center;
+	border-radius:2px;
+	font-size:17px;
+	color:#FFF;
+}
+.pir .clic, .lon{
+	margin:0 auto;
+	display:inline-block;
+	cursor:pointer;
+}
+.lon{
+	display:inline-block !important;
+	margin-left:-100px;
+}
+body{
+	background:#FFF;
+	font-family:helvetica;
+	color:#333;
+	margin:0;
+}
+ul{
+	margin:0;
+	padding:initial !important;
+}
+li{
+	display:inline-block;
+	padding:0;
+	width:80px;
+	vertical-align:middle;
+}
+svg{
+	width:15%;
+	height:15%;
+}
+#instrucciones li{
+	display:inline-block;
+	width:15%;
+	margin:0 50px;
+	text-align:justify;
+}
+#instrucciones{
+	text-align:center;
+}
+#links a{
+	color:#c0c0c0;
+}
+#links div{
+	width:10%;
+	text-align:center;
+	margin:0 auto;
+	display:inline-block;
+}
+p .youtube{
+	text-align:center;
+}
+#vision, #mision{
+	width:300px;
+	text-align:center;
+}
+#vision{
+	float:left;
+	margin-left:250px;
+}
+#mision{
+	float:right;
+	margin-right:250px;
+}
+#flecha{
+	float: left;
+	height: 80%;
+	position: absolute;
+	bottom: -200px;
+}
+
+.pir img{
+	width:100%;
+}
+.pir p{
+	margin:0;
+	font-size:12px;
+}
+.ui-effects-wrapper{
+	height: 100%;
+	display:inline;
+	position:relative;
+	margin-left: -100px;
+	margin-top: -17px;
+}
+@media screen and (max-width: 710px){
+	.orc{
+		margin-top:20%;
+	}
+	#m1{
+		width:30% !important;
+		margin: 0 !important;
+	}
+	#m2{
+		width:50% !important;
+		margin: 0 !important;
+		margin-left: 6% !important;
+		margin-top: -20px !important;
+	}
+	#m3{
+		width:70% !important;
+		margin: 0 !important;
+		margin-left: 10% !important;
+		margin-top: -10% !important;
+	}
+	#m4{
+		width: 80% !important;
+		margin: 0 !important;
+		margin-left: 13% !important;
+		margin-top: -20% !important;
+	}
+	.contenido{
+		width:100% !important;
+		height:auto !important;
+		background:none !important;
+		position:relative !important;
+		margin:0 !important;
+		color: #808080;
+	}
+	.ui-effects-wrapper{
+		height:auto !important;
+		width:100% !important;
+	}
+	#titu{
+		display:none;
+	}
+}
+</style>
+</head>
+
+<body>
+<img style="width:100%" src="http://www.anahuacoaxaca.edu.mx/nova/img/fondo2.jpg" alt="Instrucciones" title="Instrucciones" />
+<div style="overflow:hidden">
+	<div id="vision">
+    	<h1>Visión</h1>
+    	<p>100% de aprobados en CENEVAL</p>
+        <p>Reducir la deserción escolar en un 50%</p>
+    </div>
+    <div id="mision">
+    	<h1>Misión</h1>
+    	<p>Formación Integral de líderes de acción positiva, desarrollo de la persona y de la sociedad</p>
+    </div>
+</div>
+<p style="text-align:center"><a style="margin:0 auto" class="youtube" href="https://www.youtube.com/watch?v=ItE4g8i74Js">Ver Video</a></p>
+<section id="piramide">
+
+	<div class="pir">
+    	<div id="m1" class="clic" onClick="clic()" style="width: 210px;margin-left: 20px; position:relative; z-index:4">
+        	<img src="http://anahuacoaxaca.edu.mx/nova/img/p1.png">
+        </div>
+        <div class="contenido" style="width: 1000px;background: #00d0ef;position: absolute;margin-left: -130px;z-index: 1;height: 180px;">
+        	<h1 id="titu" style="background: #90c0c0; margin:0px; height:97px;">Pirámide del Proyecto Formativo NOVA</h1>
+        	<ul>
+            	<a href="http://anahuac.blackboard.com/webapps/blackboard/content/launchLink.jsp?course_id=_91308_1&toc_id=_163762_1&mode=cpview&mode=reset"><li>
+                	<p><img src="http://anahuacoaxaca.edu.mx/nova/img/alumnos/Alumnos-01.svg"></p>
+                    <p>Prudencia</p>
+                </li></a>
+            	<li>
+                	<p><a href="http://anahuac.blackboard.com/webapps/blackboard/content/launchLink.jsp?course_id=_91308_1&toc_id=_163762_1&mode=cpview&mode=reset"><img src="http://anahuacoaxaca.edu.mx/nova/img/alumnos/Alumnos-02.svg"></a></p>
+                    <p>Justicia</p>
+                </li>
+            	<li>
+                	<p><a href="http://anahuac.blackboard.com/webapps/blackboard/content/launchLink.jsp?course_id=_91308_1&toc_id=_163762_1&mode=cpview&mode=reset"><img src="http://anahuacoaxaca.edu.mx/nova/img/alumnos/Alumnos-03.svg"></a></p>
+                    <p>Fortaleza</p>
+                </li>
+            	<li>
+                	<p><a href="http://anahuac.blackboard.com/webapps/blackboard/content/launchLink.jsp?course_id=_91308_1&toc_id=_163762_1&mode=cpview&mode=reset"><img src="http://anahuacoaxaca.edu.mx/nova/img/alumnos/Alumnos-04.svg"></a></p>
+                    <p>Autodominio</p>
+                </li>
+            	<li>
+                	<p><a href="http://anahuac.blackboard.com/webapps/blackboard/content/launchLink.jsp?course_id=_91308_1&toc_id=_163762_1&mode=cpview&mode=reset"><img src="http://anahuacoaxaca.edu.mx/nova/img/alumnos/Alumnos-05.svg"></a></p>
+                    <p>Sentido</p>
+                </li>
+            	<li>
+                	<p><a href="http://anahuac.blackboard.com/webapps/blackboard/content/launchLink.jsp?course_id=_91308_1&toc_id=_163763_1&mode=cpview&mode=reset"><img src="http://anahuacoaxaca.edu.mx/nova/img/alumnos/Alumnos-06.svg"></a></p>
+                    <p>Toma de decisiones</p>
+                </li>
+            	<li>
+                	<p><a href="http://anahuac.blackboard.com/webapps/blackboard/content/launchLink.jsp?course_id=_91308_1&toc_id=_163763_1&mode=cpview&mode=reset"><img src="http://anahuacoaxaca.edu.mx/nova/img/alumnos/Alumnos-07.svg"></a></p>
+                    <p>Pensamiento crítico</p>
+                </li>
+            	<li>
+                	<p><a href="http://anahuac.blackboard.com/webapps/blackboard/content/launchLink.jsp?course_id=_91308_1&toc_id=_163763_1&mode=cpview&mode=reset"><img src="http://anahuacoaxaca.edu.mx/nova/img/alumnos/Alumnos-08.svg"></a></p>
+                    <p>Trabajo en Equipo</p>
+                </li>
+            	<li>
+                	<p><a href="http://anahuac.blackboard.com/webapps/blackboard/content/launchLink.jsp?course_id=_91308_1&toc_id=_163763_1&mode=cpview&mode=reset"><img src="http://anahuacoaxaca.edu.mx/nova/img/alumnos/Alumnos-09.svg"></a></p>
+                    <p>Comunicación Eficaz</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+	<div class="pir">
+    	<div class="clic" onClick="clic()" id="m2" style="width: 330px;margin-left: 50px;margin-top: -30px;position: relative;z-index: 3;">
+        	<img src="http://anahuacoaxaca.edu.mx/nova/img/p2.png">
+        </div>
+        <div class="contenido" style="width: 895px;background: #ff994f;position: absolute;margin-left: -100px;z-index: 1;height: 97px; margin-top:-17px">
+        	<ul>
+            	<li>
+                	<p><a href="http://anahuac.blackboard.com/webapps/blackboard/content/launchLink.jsp?course_id=_91308_1&toc_id=_151683_1&mode=cpview&mode=reset"><img src="http://anahuacoaxaca.edu.mx/nova/img/Modelo Educativo/Modelo-01.svg"></a></p>
+                    <p>Humanidades</p>
+                </li>
+            	<li>
+                	<p><a href="http://anahuac.blackboard.com/webapps/blackboard/content/launchLink.jsp?course_id=_91308_1&toc_id=_151683_1&mode=cpview&mode=reset"><img src="http://anahuacoaxaca.edu.mx/nova/img/Modelo Educativo/Modelo-02.svg"></a></p>
+                    <p>BEAS</p>
+                </li>
+            	<li>
+                	<p><a href="http://anahuac.blackboard.com/webapps/blackboard/content/launchLink.jsp?course_id=_91308_1&toc_id=_151683_1&mode=cpview&mode=reset"><img src="http://anahuacoaxaca.edu.mx/nova/img/Modelo Educativo/Modelo-03.svg"></a></p>
+                    <p>Prácticum</p>
+                </li>
+            	<li>
+                	<p><a href="http://anahuac.blackboard.com/webapps/blackboard/content/launchLink.jsp?course_id=_91308_1&toc_id=_151683_1&mode=cpview&mode=reset"><img src="http://anahuacoaxaca.edu.mx/nova/img/Modelo Educativo/Modelo-04.svg"></a></p>
+                    <p>@prende</p>
+                </li>
+            	<li>
+                	<p><a href="http://anahuac.blackboard.com/webapps/blackboard/content/launchLink.jsp?course_id=_91308_1&toc_id=_151683_1&mode=cpview&mode=reset"><img src="http://anahuacoaxaca.edu.mx/nova/img/Modelo Educativo/Modelo-05.svg"></a></p>
+                    <p>Materia en línea</p>
+                </li>
+            	<li>
+                	<p><a href="http://anahuac.blackboard.com/webapps/blackboard/content/launchLink.jsp?course_id=_91308_1&toc_id=_151683_1&mode=cpview&mode=reset"><img src="http://anahuacoaxaca.edu.mx/nova/img/Modelo Educativo/Modelo-06.svg"></a></p>
+                    <p>Materia Semi-presencial</p>
+                </li>
+            	<li>
+                	<p><a href="http://anahuac.blackboard.com/webapps/blackboard/content/launchLink.jsp?course_id=_91308_1&toc_id=_151683_1&mode=cpview&mode=reset"><img src="http://anahuacoaxaca.edu.mx/nova/img/Modelo Educativo/Modelo-07.svg"></a></p>
+                    <p>Inglés</p>
+                </li>
+            	<li>
+                	<p><a href="http://anahuac.blackboard.com/webapps/blackboard/content/launchLink.jsp?course_id=_91308_1&toc_id=_151683_1&mode=cpview&mode=reset"><img src="http://anahuacoaxaca.edu.mx/nova/img/Modelo Educativo/Modelo-08.svg"></a></p>
+                    <p>Materia en Inglés</p>
+                </li>
+            	<li>
+                	<p><a href="http://anahuac.blackboard.com/webapps/blackboard/content/launchLink.jsp?course_id=_91308_1&toc_id=_151683_1&mode=cpview&mode=reset"><img src="http://anahuacoaxaca.edu.mx/nova/img/Modelo Educativo/Modelo-09.svg"></a></p>
+                    <p>Seriación de Materias</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+	<div class="pir">
+    	<div id="m3" class="clic" onClick="clic()" style="width: 450px;margin-left: 80px;margin-top: -70px;position: relative;z-index: 2;">
+        	<img src="http://anahuacoaxaca.edu.mx/nova/img/p3.png">
+        </div>
+        <div class="contenido" style="width: 820px;background: #779dff;position: absolute;margin-left: -100px;z-index: 1;height: 81px; margin-top:-48px">
+        	<ul>
+            	<li>
+                	<p><a href="http://anahuac.blackboard.com/webapps/blackboard/content/launchLink.jsp?course_id=_91308_1&toc_id=_151685_1&mode=cpview&mode=reset"><img src="http://anahuacoaxaca.edu.mx/nova/img/Profesor/Profesor-01.svg"></a></p>
+                    <p>Transformar Vidas</p>
+                </li>
+            	<li>
+                	<p><a href="http://anahuac.blackboard.com/webapps/blackboard/content/launchLink.jsp?course_id=_91308_1&toc_id=_151685_1&mode=cpview&mode=reset"><img src="http://anahuacoaxaca.edu.mx/nova/img/Profesor/Profesor-02.svg"></a></p>
+                    <p>Rigor y Relevancia</p>
+                </li>
+            	<li>
+                	<p><a href="http://anahuac.blackboard.com/webapps/blackboard/content/launchLink.jsp?course_id=_91308_1&toc_id=_151685_1&mode=cpview&mode=reset"><img src="http://anahuacoaxaca.edu.mx/nova/img/Profesor/Profesor-03.svg"></a></p>
+                    <p>Competencias</p>
+                </li>
+            	<li>
+                	<p><a href="http://anahuac.blackboard.com/webapps/blackboard/content/launchLink.jsp?course_id=_91308_1&toc_id=_151685_1&mode=cpview&mode=reset"><img src="http://anahuacoaxaca.edu.mx/nova/img/Profesor/Profesor-05.svg"></a></p>
+                    <p>Educación por Evidencias</p>
+                </li>
+            	<li>
+                	<p><a href="http://anahuac.blackboard.com/webapps/blackboard/content/launchLink.jsp?course_id=_91308_1&toc_id=_151685_1&mode=cpview&mode=reset"><img src="http://anahuacoaxaca.edu.mx/nova/img/Profesor/Profesor-06.svg"></a></p>
+                    <p>Reciprocidad</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+	<div class="pir">
+    	<div id="m4" class="clic" onClick="clic()" style="width: 550px;margin-left: 100px;margin-top: -130px;position: relative;z-index: 1;">
+        	<img src="http://anahuacoaxaca.edu.mx/nova/img/p4.png">
+        </div>
+        <div class="contenido" style="width: 705px;background: #6f6f70;position: absolute;margin-left: 280px;z-index: 1;height: 52px; margin-top:-225px">
+        	<p style="margin:10px 0 0 20px"><a>DETERMINAR LOS MOMENTOS Y MENSAJES CLAVE DE CADA ETAPA DEL PFN: MATERIAS TORALES PARA IDENTIDAD CATÓLICA, PARA PENSAMIENTO CRÍTICO, CREATIVIDAD, COMUNICACIÓN, TRABAJO EN EQUIPO.</a></p>
+        </div>
+    </div>
+
+</section>
+<div>
+	<img id="flecha" src="http://www.anahuacoaxaca.edu.mx/nova/img/flecha.png" alt="flecha" title="flecha" />
+</div>
+</body>
+</html>
