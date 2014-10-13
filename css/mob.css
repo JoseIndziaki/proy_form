@@ -34,7 +34,7 @@ img, object, embed, video {
 	text-align:center;
 	font-family:itc, helvetica !important;
 	color:#FFF;
-	background:rgba(0, 5, 58, 0.64);
+	/*background:rgba(0, 5, 58, 0.64);*/
 	font-size:50px;
 	overflow:hidden;
 }
@@ -45,7 +45,7 @@ h1{
 }
 .head-cont:before{
 	content:"";
-	background: url(../img/fondo.jpg);
+	background: url(../img/Superior-01.png);
 	background-size: 100%;
 	top:0;
 	right:0;
@@ -131,6 +131,7 @@ footer li a:hover{
 	width:50%;
 	margin:0 auto;
 	border-left:solid 1px #003D5F;
+	text-align:justify;
 }
 h3{
 	color:#003;
@@ -178,7 +179,11 @@ h3{
 }
 }
 
-@media only screen and (min-width: 100px) and (max-width: 768px) {
+@media only screen and (min-width: 100px) and (max-width: 1024px) {
+#logo{
+	width:100%;
+	height:100px;
+}
 .gridContainer {
 	width: 90.675%;
 	padding-left: 1.1625%;
@@ -225,9 +230,6 @@ li{
 #back{
 	background-size: auto;
 }
-#logo{
-	max-height:200px;
-}
 .grid{
 	color:#FFF;
 }
@@ -241,7 +243,11 @@ li{
 
 /* Diseño escritorio: de 769 px hasta un máximo de 1232 px.  Hereda estilos de: Diseño móvil y Diseño tableta. */
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1024px) {
+#logo{
+	width:100%;
+	height:200px;
+}
 .gridContainer {
 	width: 100%;
 	max-width: 100%;
